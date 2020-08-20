@@ -12,6 +12,8 @@ The url for the API:
 
 https://ancient-badlands-81110.herokuapp.com/
 
+The PostMan collection has the Access Tokens for the API endpoints. 
+
 The endpoints are as follows: 
 
 GET '/movies'
