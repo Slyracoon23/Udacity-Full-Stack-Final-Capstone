@@ -1,0 +1,661 @@
+{
+	"info": {
+		"_postman_id": "728fdb1d-c863-4989-b54f-aee84a5584ed",
+		"name": "udacity-fsnd-final-capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "public",
+			"item": [
+				{
+					"name": "/actors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/actors",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/movies",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/movies/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"New Movie\",\n    \"release_date\" : \"2019-03-13\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/movies/create",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/actors/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"name\": \"John Doe\",\n\"age\": 22,\n\"gender\": \"Male\",\n\"movie_id\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/actors/create",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/movies/delete/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/movies/delete/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/actors/delete/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/actors/delete/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/actors/patch/1",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"name\": \"John Doe\",\n\"age\": 22,\n\"gender\": \"Male\",\n\"movie_id\": 1\n}"
+						},
+						"url": {
+							"raw": "{{host}}/actors/patch/4",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors",
+								"patch",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/movies/patch/1",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/movies/patch/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies",
+								"patch",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "904ac75e-784e-4df0-9ccd-207d4d2d3e2a",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "57b1763b-8812-4b12-affd-e96f79a6c909",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Casting Director",
+			"item": [
+				{
+					"name": "/actors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/actors",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/movies",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/movies/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"New Movie\",\n    \"release_date\" : \"2019-03-13\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/movies/create",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/actors/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"name\": \"John Doe\",\n\"age\": 22,\n\"gender\": \"Male\",\n\"movie_id\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/actors/create",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/movies/delete/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/movies/delete/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/actors/delete/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/actors/delete/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/actors/patch/1",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"name\": \"John Doe\",\n\"age\": 22,\n\"gender\": \"Male\",\n\"movie_id\": 1\n}"
+						},
+						"url": {
+							"raw": "{{host}}/actors/patch/4",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors",
+								"patch",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/movies/patch/1",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/movies/patch/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies",
+								"patch",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJEbG5pelUyVVA2RjJiajdsWXI2QSJ9.eyJpc3MiOiJodHRwczovL2Rldi0xYjFrMWl4ei51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTI2MTc2NjM0MjUxODI4NDk3NTMiLCJhdWQiOlsiY2FzdGluZy1jYXBzdG9uZSIsImh0dHBzOi8vZGV2LTFiMWsxaXh6LnVzLmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE1OTc4ODExNTgsImV4cCI6MTU5Nzk2NzU1OCwiYXpwIjoiV1VkaTlsOTJHT0thQ1V6cVJhMm00M1hNNVBBWlR3WXciLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwicGVybWlzc2lvbnMiOlsiY3JlYXRlOmFjdG9ycyIsImNyZWF0ZTptb3ZpZXMiLCJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsImVkaXQ6YWN0b3JzIiwiZWRpdDptb3ZpZXMiLCJ2aWV3OmFjdG9ycyIsInZpZXc6bW92aWVzIl19.qYu5wsJg04uioEcJTEbCIQUCMyVkOiEUYmsKUaPOJv30TCM7-X-3axTQoMkUnYTW28GPhe3iWR5xVE2XnxmyRr5gFz1AI-8DS4hvYJcbpYI7phViM1-t64GO22M03XeCAVnddVsupsftE2vJfDcMuCAwGiBqBzeh12Abb1bCnTbO-TbqczX9Ydbr-y8_lz7W96f3uj8LnCJA8BCADu5TFiFp3LHxk5OrZjuRcPQaDcTXUO5vU3L7jhfMl5kwkJFlB1MIAvmvHZFg15V2er8OTqayyzSM9R5FxJ2uk5kpMzdyfUzH9-gtaDZ_MUSRyqRaycmnVX4-0GxsZilnYJVQ4g",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "ba047468-2a98-4d39-8ef9-7e3551e57d3f",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "9783fa16-763c-4135-8b5c-9719c653c4d7",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Exectutive Dircector",
+			"item": [
+				{
+					"name": "/actors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/actors",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/movies",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/movies/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"New Movie\",\n    \"release_date\" : \"2019-03-13\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/movies/create",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/actors/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"name\": \"John Doe\",\n\"age\": 22,\n\"gender\": \"Male\",\n\"movie_id\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/actors/create",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/movies/delete/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/movies/delete/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/actors/delete/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/actors/delete/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/actors/patch/1",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"name\": \"John Doe\",\n\"age\": 22,\n\"gender\": \"Male\",\n\"movie_id\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/actors/patch/4",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors",
+								"patch",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/movies/patch/1",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"New Movie\",\n    \"release_date\" : \"2019-03-13\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/movies/patch/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies",
+								"patch",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJEbG5pelUyVVA2RjJiajdsWXI2QSJ9.eyJpc3MiOiJodHRwczovL2Rldi0xYjFrMWl4ei51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTI2MTc2NjM0MjUxODI4NDk3NTMiLCJhdWQiOlsiY2FzdGluZy1jYXBzdG9uZSIsImh0dHBzOi8vZGV2LTFiMWsxaXh6LnVzLmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE1OTc4ODExNTgsImV4cCI6MTU5Nzk2NzU1OCwiYXpwIjoiV1VkaTlsOTJHT0thQ1V6cVJhMm00M1hNNVBBWlR3WXciLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwicGVybWlzc2lvbnMiOlsiY3JlYXRlOmFjdG9ycyIsImNyZWF0ZTptb3ZpZXMiLCJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsImVkaXQ6YWN0b3JzIiwiZWRpdDptb3ZpZXMiLCJ2aWV3OmFjdG9ycyIsInZpZXc6bW92aWVzIl19.qYu5wsJg04uioEcJTEbCIQUCMyVkOiEUYmsKUaPOJv30TCM7-X-3axTQoMkUnYTW28GPhe3iWR5xVE2XnxmyRr5gFz1AI-8DS4hvYJcbpYI7phViM1-t64GO22M03XeCAVnddVsupsftE2vJfDcMuCAwGiBqBzeh12Abb1bCnTbO-TbqczX9Ydbr-y8_lz7W96f3uj8LnCJA8BCADu5TFiFp3LHxk5OrZjuRcPQaDcTXUO5vU3L7jhfMl5kwkJFlB1MIAvmvHZFg15V2er8OTqayyzSM9R5FxJ2uk5kpMzdyfUzH9-gtaDZ_MUSRyqRaycmnVX4-0GxsZilnYJVQ4g",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "876d9e34-8cdf-47a1-8b56-5f302bdd73bf",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "1495cd15-7916-479b-b5d3-6f4bbd0d8d26",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "77152b7e-fd07-4430-ad0a-804c89c4ff44",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "887c0953-01fe-42b3-b04f-ce87f072acb2",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "2c6206a9-40d5-41de-807d-ad874b9b6238",
+			"key": "host",
+			"value": ""
+		}
+	],
+	"protocolProfileBehavior": {}
+}
